@@ -33,11 +33,8 @@ Window::Window() : wxFrame(nullptr, wxID_ANY, "Calculator but Epic", wxPoint(0, 
 	butEqu = new wxButton(this, 104, "Equals", wxPoint(340, 420), wxSize(100, 210));
 	butC   = new wxButton(this, 105, "Clear", wxPoint(10, 90), wxSize(100, 100));
 	butMod = new wxButton(this, 106, "Mod", wxPoint(10, 530), wxSize(100, 100));
-
-
 	butBin = new wxButton(this, 107, "Binary", wxPoint(340, 90), wxSize(100, 45));
 	butHex = new wxButton(this, 108, "Hex", wxPoint(340, 145), wxSize(100, 45));
-
 	butDec = new wxButton(this, 109, "Decimal", wxPoint(230, 530), wxSize(100, 100));
 
 
