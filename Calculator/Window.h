@@ -31,5 +31,13 @@ public:
 	wxButton* butBin = nullptr;
 	wxButton* butHex = nullptr;
 	wxButton* butDec = nullptr;
+	wxTextCtrl* text = nullptr;
+
+
+	void ButtonPress(wxCommandEvent& click);
+
+
+
+	wxDECLARE_EVENT_TABLE();
 };
 

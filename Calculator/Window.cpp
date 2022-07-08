@@ -1,7 +1,11 @@
 #include "Window.h"
 #include "wx/wx.h"
 
+wxBEGIN_EVENT_TABLE(Window, wxFrame)
 
+EVT_BUTTON(1001, ButtonPress)
+
+wxEND_EVENT_TABLE()
 
 Window::Window() : wxFrame(nullptr, wxID_ANY, "Calculator but Epic", wxPoint(0, 0), wxSize(465, 675))
 {
@@ -41,4 +45,17 @@ Window::Window() : wxFrame(nullptr, wxID_ANY, "Calculator but Epic", wxPoint(0, 
 
 #pragma endregion
 
+	text = new wxTextCtrl(this, 500, "", wxPoint(10, 10), wxSize(425, 70));
+
+
+
+}
+
+
+
+void Window::ButtonPress(wxCommandEvent& click)
+{
+	
+
+	click.Skip();
 }
