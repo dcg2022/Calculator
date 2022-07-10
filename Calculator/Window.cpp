@@ -52,7 +52,6 @@ Window::Window() : wxFrame(nullptr, wxID_ANY, "Calculator but Epic", wxPoint(0, 
 	butDec = new wxButton(this, 109, ".",      wxPoint(230, 530), wxSize(100, 100));
 
 	text = new wxTextCtrl(this, 500, "", wxPoint(10, 10), wxSize(425, 70));
-
 }
 
 
@@ -124,7 +123,6 @@ void Window::ButtonPress(wxCommandEvent& click)
 	case 109:
 		text->AppendText(".");
 		break;
-
 	}
 
 	click.Skip();
