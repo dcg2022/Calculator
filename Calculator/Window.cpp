@@ -76,6 +76,37 @@ void Window::ButtonPress(wxCommandEvent& click)
 	case 4:
 		text->AppendText("4");
 		break;
+	case 5:
+		text->AppendText("5");
+		break;
+	case 6:
+		text->AppendText("6");
+		break;
+	case 7:
+		text->AppendText("7");
+		break;
+	case 8:
+		text->AppendText("8");
+		break;
+	case 9:
+		text->AppendText("9");
+		break;
+	case 0:
+		text->AppendText("0");
+		break;
+	case 100:
+		text->AppendText("+");
+		break;
+	case 101:
+		text->AppendText("-");
+		break;
+	case 102:
+		text->AppendText("*");
+		break;
+	case 103:
+		text->AppendText("/");
+		break;
+
 	}
 
 	click.Skip();
