@@ -118,7 +118,12 @@ void Window::ButtonPress(wxCommandEvent& click)
 	case 107:
 		text->AppendText("~");
 		break;
-
+	case 108:
+		text->AppendText("#");
+		break;
+	case 109:
+		text->AppendText(".");
+		break;
 
 	}
 
