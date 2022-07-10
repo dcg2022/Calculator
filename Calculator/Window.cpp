@@ -106,6 +106,19 @@ void Window::ButtonPress(wxCommandEvent& click)
 	case 103:
 		text->AppendText("/");
 		break;
+	case 104:
+		text->AppendText("=");
+		break;
+	case 105:
+		text->Clear();
+		break;
+	case 106:
+		text->AppendText("mod");
+		break;
+	case 107:
+		text->AppendText("~");
+		break;
+
 
 	}
 
