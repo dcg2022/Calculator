@@ -1,5 +1,6 @@
 #pragma once
 #include "wx/wx.h"
+#include "ButtonFactory.h"
 
 
 
@@ -10,17 +11,10 @@ private:
 
 
 public:
+
+	ButtonFactory factory;
 	Window();
-	wxButton* but1 = nullptr;
-	wxButton* but2 = nullptr;
-	wxButton* but3 = nullptr;
-	wxButton* but4 = nullptr;
-	wxButton* but5 = nullptr;
-	wxButton* but6 = nullptr;
-	wxButton* but7 = nullptr;
-	wxButton* but8 = nullptr;	
-	wxButton* but9 = nullptr;
-	wxButton* but0 = nullptr;
+
 	wxButton* butPls = nullptr;
 	wxButton* butMin = nullptr;
 	wxButton* butMul = nullptr;

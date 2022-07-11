@@ -1,5 +1,6 @@
 #include "Window.h"
 #include "wx/wx.h"
+#include "ButtonFactory.h"
 
 wxBEGIN_EVENT_TABLE(Window, wxFrame)
 
@@ -29,16 +30,8 @@ wxEND_EVENT_TABLE()
 Window::Window() : wxFrame(nullptr, wxID_ANY, "Calculator but Epic", wxPoint(0, 0), wxSize(465, 675))
 {
 
-	but1 = new wxButton(this, 1, "1", wxPoint(10,  200), wxSize(100, 100));
-	but2 = new wxButton(this, 2, "2", wxPoint(120, 200), wxSize(100, 100));
-	but3 = new wxButton(this, 3, "3", wxPoint(230, 200), wxSize(100, 100));
-	but4 = new wxButton(this, 4, "4", wxPoint(10,  310), wxSize(100, 100));
-	but5 = new wxButton(this, 5, "5", wxPoint(120, 310), wxSize(100, 100));
-	but6 = new wxButton(this, 6, "6", wxPoint(230, 310), wxSize(100, 100));
-	but7 = new wxButton(this, 7, "7", wxPoint(10,  420), wxSize(100, 100));
-	but8 = new wxButton(this, 8, "8", wxPoint(120, 420), wxSize(100, 100));
-	but9 = new wxButton(this, 9, "9", wxPoint(230, 420), wxSize(100, 100));
-	but0 = new wxButton(this, 0, "0", wxPoint(120, 530), wxSize(100, 100));
+
+	factory.CreateNumButtons(this);
 
 	butPls = new wxButton(this, 100, "+",      wxPoint(340, 310), wxSize(100, 100));
 	butMin = new wxButton(this, 101, "-",      wxPoint(340, 200), wxSize(100, 100));
@@ -94,19 +87,19 @@ void Window::ButtonPress(wxCommandEvent& click)
 		text->AppendText("0");
 		break;
 	case 100:
-		text->AppendText("+");
+		text->AppendText(" + ");
 		break;
 	case 101:
-		text->AppendText("-");
+		text->AppendText(" - ");
 		break;
 	case 102:
-		text->AppendText("*");
+		text->AppendText(" * ");
 		break;
 	case 103:
-		text->AppendText("/");
+		text->AppendText(" / ");
 		break;
 	case 104:
-		text->AppendText("=");
+		text->AppendText(" = ");
 		break;
 	case 105:
 		text->Clear();
