@@ -14,9 +14,6 @@ public:
 
 	ButtonFactory factory;
 	Window();
-
-
-
 	void ButtonPress(wxCommandEvent& click);
 
 

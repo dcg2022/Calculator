@@ -39,6 +39,5 @@ Window::Window() : wxFrame(nullptr, wxID_ANY, "Calculator but Epic", wxPoint(0, 
 void Window::ButtonPress(wxCommandEvent& click)
 {
 	factory.ButtonPressDetection(click);
-
 	click.Skip();
 }
