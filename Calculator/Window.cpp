@@ -51,7 +51,7 @@ Window::Window() : wxFrame(nullptr, wxID_ANY, "Calculator but Epic", wxPoint(0, 
 	butHex = new wxButton(this, 108, "Hex",    wxPoint(340, 145), wxSize(100, 45));
 	butDec = new wxButton(this, 109, ".",      wxPoint(230, 530), wxSize(100, 100));
 
-	text = new wxTextCtrl(this, 500, "", wxPoint(10, 10), wxSize(425, 70));
+	text = new wxTextCtrl(this, 500, "", wxPoint(10, 10), wxSize(430, 70));
 }
 
 
