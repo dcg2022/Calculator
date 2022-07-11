@@ -18,7 +18,7 @@ public:
 	wxButton* but9 = nullptr;
 	wxButton* but0 = nullptr;
 
-	
+	void CreateFuncButtions(wxWindow* window);
 	wxButton* butPls = nullptr;
 	wxButton* butMin = nullptr;
 	wxButton* butMul = nullptr;
@@ -29,6 +29,10 @@ public:
 	wxButton* butBin = nullptr;
 	wxButton* butHex = nullptr;
 	wxButton* butDec = nullptr;
+
+	void CreateTextBox(wxWindow* window);
 	wxTextCtrl* text = nullptr;
+
+	void ButtonPressDetection(wxCommandEvent& click);
 };
 
