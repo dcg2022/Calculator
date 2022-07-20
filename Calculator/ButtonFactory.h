@@ -1,8 +1,19 @@
 #pragma once
 #include "wx/wx.h"
+#include "Processor.h"
 
 class ButtonFactory
 {
+
+private:
+
+	float num1 = 0;
+	float num2 = 0;
+	float ans = 0;
+	std::string result2 = "";
+	char op = ' ';
+	bool solve = false;
+
 public:
 
 
@@ -34,5 +45,10 @@ public:
 	wxTextCtrl* text = nullptr;
 
 	void ButtonPressDetection(wxCommandEvent& click);
+
+
+	
+	void Solved();
+	
 };
 
