@@ -187,6 +187,9 @@ void ButtonFactory::ButtonPressDetection(wxCommandEvent& click)
 		break;
 	case 108:
 		text->AppendText("#");
+		text->Clear();
+		ans2 = process->toHexaDecimalString(num1);
+		text->AppendText(ans2);
 		break;
 	case 109:
 		text->AppendText(".");

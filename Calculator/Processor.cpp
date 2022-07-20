@@ -61,3 +61,42 @@ std::string Processor::toBinaryString(float number)
 	return ans;
 }
 
+
+std::string Processor::toHexaDecimalString(float number)
+{
+	std::string ans = "";
+	while (number > 0)
+	{
+		int rem = (int)number % 16;
+		if (rem < 10)
+		{
+			ans = std::to_string(rem) + ans;
+		}
+		else if (rem == 10)
+		{
+			ans = "A" + rem;
+		}
+		else if (rem == 11)
+		{
+			ans = "B" + rem;
+		}
+		else if (rem == 12)
+		{
+			ans = "C" + rem;
+		}
+		else if (rem == 13)
+		{
+			ans = "D" + rem;
+		}
+		else if (rem == 14)
+		{
+			ans = "E" + rem;
+		}
+		else if (rem == 15)
+		{
+			ans = "F" + rem;
+		}
+		number = number / 16;
+	}
+	return "0x" + ans;
+}
