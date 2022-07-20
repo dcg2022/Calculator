@@ -168,7 +168,6 @@ void ButtonFactory::ButtonPressDetection(wxCommandEvent& click)
 		solve = true;
 		break;
 	case 105:
-		text->AppendText("Clr");
 		solve = false;
 		text->Clear();
 		op = ' ';
@@ -176,10 +175,15 @@ void ButtonFactory::ButtonPressDetection(wxCommandEvent& click)
 		num2 = 0;
 		break;
 	case 106:
-		text->AppendText("%");
+		solve = false;
+		text->AppendText(" % ");
+		op = '%';
 		break;
 	case 107:
 		text->AppendText("~");
+		text->Clear();
+		ans2 = process->toBinaryString(num1);
+		text->AppendText(ans2);
 		break;
 	case 108:
 		text->AppendText("#");

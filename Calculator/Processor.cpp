@@ -48,3 +48,16 @@ float Processor::Operators(float num1, float num2, char op)
 
 	return ans;
 }
+
+std::string Processor::toBinaryString(float number)
+{
+	std::string ans = "";
+	for (int i = 0; i < 16; i++)
+	{
+		ans = std::to_string((int)number % 2) + ans;
+		number = number / 2;
+	}
+
+	return ans;
+}
+

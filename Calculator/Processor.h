@@ -17,7 +17,8 @@ public:
 
 	float Operators(float num1, float num2, char op);
 	
-
+	std::string toBinaryString(float number);
+	std::string toHexaDecimalString(float number);
 
 };
 

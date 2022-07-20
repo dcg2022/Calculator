@@ -10,7 +10,7 @@ private:
 	float num1 = 0;
 	float num2 = 0;
 	float ans = 0;
-	std::string result2 = "";
+	std::string ans2 = "";
 	char op = ' ';
 	bool solve = false;
 
